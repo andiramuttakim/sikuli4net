@@ -1,0 +1,17 @@
+C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4NetTests\bin\Debug\CloseChrome.png
+C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4NetTests\bin\Debug\sikulirestapi-1.0.jar
+C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4NetTests\bin\Debug\ChromeIcon.png
+C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4NetTests\bin\Debug\Sikuli4NetTests.dll
+C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4NetTests\bin\Debug\Sikuli4NetTests.pdb
+C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4NetTests\bin\Debug\NUnit.Framework.dll
+C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4NetTests\bin\Debug\Sikuli4Net.dll
+C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4NetTests\bin\Debug\Newtonsoft.Json.dll
+C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4NetTests\bin\Debug\Sikuli4Net.pdb
+C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4NetTests\bin\Debug\Newtonsoft.Json.xml
+C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4NetTests\obj\Debug\Sikuli4NetTests.csprojResolveAssemblyReference.cache
+C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4NetTests\obj\Debug\Sikuli4NetTests.dll
+C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4NetTests\obj\Debug\Sikuli4NetTests.pdb
+C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4NetTests\bin\Debug\NUnit.Framework.xml
+C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4NetTests\bin\Debug\BrowserBar.png
+C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4NetTests\bin\Debug\SikuliFavoriteIcon.png
+C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4NetTests\bin\Debug\SikuliIcon.png
