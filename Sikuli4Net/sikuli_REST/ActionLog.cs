@@ -34,7 +34,7 @@ namespace Sikuli4Net.sikuli_REST
 			}
 			DateTime now = DateTime.Now;
 			LogPath = Path.Combine(LogFolderPath,LogFileName + "." +now.ToShortDateString().Replace("/","") + now.ToShortTimeString().Replace(":","") + ".txt");
-			Console.WriteLine(LogPath);
+			Console.WriteLine("--Log for this test run can be found at: " + LogPath + "--");
 			File.Create(LogPath).Close();
 		}
 		
