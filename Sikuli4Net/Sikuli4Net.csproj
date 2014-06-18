@@ -69,6 +69,7 @@
     <Compile Include="sikuli_UTIL\ActionResult.cs" />
     <Compile Include="sikuli_UTIL\APILauncher.cs" />
     <Compile Include="sikuli_UTIL\SikuliActionException.cs" />
+    <Compile Include="sikuli_UTIL\Util.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="dlls\JNI.dll" />

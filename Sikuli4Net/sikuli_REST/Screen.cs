@@ -21,14 +21,11 @@ namespace Sikuli4Net.sikuli_REST
 	/// </summary>
 	public class Screen
 	{
-		public ActionLog Log;
-
 		private String serviceURL;
 		
 		public Screen()
 		{
 			serviceURL = "http://localhost:8080/sikuli/api/";
-			Log = new ActionLog();
 		}
 		
 		/// <summary>
@@ -147,7 +144,7 @@ namespace Sikuli4Net.sikuli_REST
 		/// <returns></returns>
 		private String MakeRequest(String requestURLExtension, String jsonObject)
 		{
-			Log.WriteLine("Making Request to Service: " + serviceURL + requestURLExtension + " POST: "+jsonObject);
+			Util.Log.WriteLine("Making Request to Service: " + serviceURL + requestURLExtension + " POST: "+jsonObject);
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(serviceURL + requestURLExtension);
             request.Accept = "application/json";
             request.Method = "POST";
@@ -162,7 +159,7 @@ namespace Sikuli4Net.sikuli_REST
             {
                 resultString = reader.ReadToEnd();
             }
-			Log.WriteLine(resultString);
+			Util.Log.WriteLine(resultString);
             return resultString;
 		}
         /// <summary>
@@ -171,7 +168,7 @@ namespace Sikuli4Net.sikuli_REST
         /// <param name="jResult">the json_Result to check</param>
         public void FailIfResultNotPASS(json_Result jResult)
         {
-            Log.WriteLine("Result: " + jResult.result + " Message: " + jResult.message + " Stacktrace: " + jResult.stacktrace);
+            Util.Log.WriteLine("Result: " + jResult.result + " Message: " + jResult.message + " Stacktrace: " + jResult.stacktrace);
             if (!jResult.ToActionResult().Equals(ActionResult.PASS))
             {
                 throw new SikuliActionException(jResult.ToActionResult(), jResult.message);

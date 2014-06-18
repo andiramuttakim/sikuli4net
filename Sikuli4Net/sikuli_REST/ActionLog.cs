@@ -7,6 +7,8 @@
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
 using System;
+using System.IO;
+using System.Collections.Generic;
 
 namespace Sikuli4Net.sikuli_REST
 {
@@ -15,10 +17,25 @@ namespace Sikuli4Net.sikuli_REST
 	/// </summary>
 	public class ActionLog
 	{
+		public static readonly String LogFileName = "log";
+		public static readonly String LogFolder = "Sikuli4Net.Client.Logs";
 		
+		private String WorkingDir;
+		private String LogFolderPath;
+        public readonly String LogPath;
 		
 		public ActionLog()
 		{
+			WorkingDir = Directory.GetCurrentDirectory();
+			LogFolderPath = Path.Combine(WorkingDir,LogFolder);
+			if(!Directory.Exists(LogFolderPath))
+			{
+				Directory.CreateDirectory(LogFolderPath);
+			}
+			DateTime now = DateTime.Now;
+			LogPath = Path.Combine(LogFolderPath,LogFileName + "." +now.ToShortDateString().Replace("/","") + now.ToShortTimeString().Replace(":","") + ".txt");
+			Console.WriteLine(LogPath);
+			File.Create(LogPath).Close();
 		}
 		
 		/// <summary>
@@ -27,6 +44,14 @@ namespace Sikuli4Net.sikuli_REST
 		/// <param name="message"></param>
 		public void WriteLine(String message)
 		{
+			List<String> line = new List<String>();
+			if(File.Exists(LogPath))
+			{
+				String [] currentLines = File.ReadAllLines(LogPath);
+				line.AddRange(currentLines);
+			}
+			line.Add(":::" + message + ":::");
+			File.WriteAllLines(LogPath,line.ToArray());
 			Console.WriteLine(":::" + message + ":::");
 		}
 	}
