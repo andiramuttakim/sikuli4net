@@ -23,7 +23,7 @@ namespace Sikuli4Net.sikuli_UTIL
         public APILauncher(bool Windowless = false)
         {
             APIJar = "sikulirestapi-1.0.jar";
-			JarReleaseAddress = "http://sourceforge.net/projects/sikuli4net/files/Java%20Application/sikulirestapi-1.0.jar/download";
+			JarReleaseAddress = "http://sourceforge.net/projects/sikulirestapi/files/sikulirestapi-1.0.jar/download";
             WorkingDir = Directory.GetCurrentDirectory();
             APIPath = Path.Combine(WorkingDir, APIJar);
             if (Windowless == false)
