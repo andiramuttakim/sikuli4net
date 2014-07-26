@@ -13,3 +13,4 @@ C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4NetTests\bin\Debug\Newtonsoft.Json
 C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4NetTests\obj\Debug\Sikuli4NetTests.csprojResolveAssemblyReference.cache
 C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4NetTests\obj\Debug\Sikuli4NetTests.dll
 C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4NetTests\obj\Debug\Sikuli4NetTests.pdb
+C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4NetTests\bin\Debug\ChromeJumpList.png

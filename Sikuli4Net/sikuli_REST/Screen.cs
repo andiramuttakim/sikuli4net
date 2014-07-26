@@ -63,13 +63,41 @@ namespace Sikuli4Net.sikuli_REST
         /// Method to double click on the specified pattern
         /// </summary>
         /// <param name="pattern">The pattern object passed to the tool for clicking</param>
-        public void DoubleClick(Pattern pattern, KeyModifier kmod = KeyModifier.NONE)
+        public void DoubleClick(Pattern pattern, KeyModifier kmod = KeyModifier.NONE, bool highlight = false)
         {
+			if (highlight)
+            {
+                Find(pattern, highlight);
+            }
             json_Click jClick = new json_Click(pattern.ToJsonPattern(), kmod);
             String jClickS = JsonConvert.SerializeObject(jClick);
             json_Result jResult = json_Result.getJResult(MakeRequest("doubleclick", jClickS));
             FailIfResultNotPASS(jResult);
         }
+		public void DoubleClick(Pattern pattern, bool highlight)
+		{
+			DoubleClick(pattern,KeyModifier.NONE, highlight);
+		}
+		/// <summary>
+		/// Method to right click on a specified pattern
+		/// </summary>
+		/// <param name="pattern"></param>
+		/// <param name="kmod"></param>
+		public void RightClick(Pattern pattern, KeyModifier kmod = KeyModifier.NONE, bool highlight = false)
+		{
+			if (highlight)
+            {
+                Find(pattern, highlight);
+            }
+			json_Click jClick = new json_Click(pattern.ToJsonPattern(), kmod);
+			String jClickS = JsonConvert.SerializeObject(jClick);
+			json_Result jResult = json_Result.getJResult(MakeRequest("rightclick",jClickS));
+			FailIfResultNotPASS(jResult);
+		}
+		public void RightClick(Pattern pattern, bool highlight)
+		{
+			RightClick(pattern, KeyModifier.NONE, highlight);
+		}
         /// <summary>
         /// Method to wait for a specific Pattern to appear on the screen.  If it does not appear by the specified timeout (in seconds), the action fails.
         /// </summary>

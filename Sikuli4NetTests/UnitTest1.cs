@@ -11,11 +11,12 @@ namespace Sikuli4NetTests
     public class UnitTests
     {
 		Pattern pattern_ChromeIcon = new Pattern("C:/Programming/SharpDevelop/Sikuli4Net/Sikuli4NetTests/ChromeIcon.png",0.8);
-		Pattern pattern_CloseChrome = new Pattern("C:/Programming/SharpDevelop/Sikuli4Net/Sikuli4NetTests/CloseChrome.png",new Point(0,-28));
+		Pattern pattern_CloseChrome = new Pattern("C:/Programming/SharpDevelop/Sikuli4Net/Sikuli4NetTests/CloseChrome.png",new Point(0,-16));
         Pattern pattern_BrowserBar = new Pattern("C:/Programming/SharpDevelop/Sikuli4Net/Sikuli4NetTests/BrowserBar.png", new Point(30, 11));
         Pattern pattern_SikuliFavoriteIcon = new Pattern("C:/Programming/SharpDevelop/Sikuli4Net/Sikuli4NetTests/SikuliFavoriteIcon.png");
         Pattern pattern_SikuliIcon = new Pattern("C:/Programming/SharpDevelop/Sikuli4Net/Sikuli4NetTests/SikuliIcon.png");
-
+		Pattern pattern_ChromeJumpList = new Pattern("C:/Programming/SharpDevelop/Sikuli4Net/Sikuli4NetTests/ChromeJumpList.png", 0.4);
+		
         [Test]
         public void _01_TestFind()
         {
@@ -104,6 +105,14 @@ namespace Sikuli4NetTests
             scrn.Wait(pattern_CloseChrome);
             scrn.Click(pattern_CloseChrome, true);
         }
+		
+		[Test]
+		public void _11_TestRightClick()
+		{
+			Screen scrn = new Screen();
+			scrn.RightClick(pattern_ChromeIcon, true);
+			scrn.Find(pattern_ChromeJumpList,true);
+		}
     }
 
     [SetUpFixture]
@@ -114,13 +123,13 @@ namespace Sikuli4NetTests
         [SetUp]
         public void RunBeforeAnyTests()
         {
-            launcher.Start();
+            //launcher.Start();
         }
 
         [TearDown]
         public void RunAfterAnyTests()
         {
-            launcher.Stop();
+            //launcher.Stop();
         }
     }
 }

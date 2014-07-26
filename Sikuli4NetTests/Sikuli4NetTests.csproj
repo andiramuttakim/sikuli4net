@@ -68,6 +68,9 @@
     <None Include="ChromeIcon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="ChromeJumpList.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="CloseChrome.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
