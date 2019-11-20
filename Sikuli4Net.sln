@@ -1,12 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-# SharpDevelop 5.0
-VisualStudioVersion = 12.0.20827.3
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sikuli4Net", "Sikuli4Net\Sikuli4Net.csproj", "{77ABFEEC-B4CD-43A5-9D7F-D9C7A281CFC0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sikuli4NetTests", "Sikuli4NetTests\Sikuli4NetTests.csproj", "{34362AB6-37C8-432F-A622-A3A554CBC031}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sikuli4NetStandard", "Sikuli4NetStandard\Sikuli4NetStandard.csproj", "{492621D4-A5FF-4323-AFE4-934D08BD87FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,8 +23,15 @@ Global
 		{34362AB6-37C8-432F-A622-A3A554CBC031}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34362AB6-37C8-432F-A622-A3A554CBC031}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34362AB6-37C8-432F-A622-A3A554CBC031}.Release|Any CPU.Build.0 = Release|Any CPU
+		{492621D4-A5FF-4323-AFE4-934D08BD87FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{492621D4-A5FF-4323-AFE4-934D08BD87FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{492621D4-A5FF-4323-AFE4-934D08BD87FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{492621D4-A5FF-4323-AFE4-934D08BD87FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4D980F7-3081-4031-8C1A-744F6DC83156}
 	EndGlobalSection
 EndGlobal
