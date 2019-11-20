@@ -1,9 +1,0 @@
-:::Making Request to Service: http://localhost:8080/sikuli/api/find POST: {"jPattern":{"imagePath":"C:/Programming/SharpDevelop/Sikuli4Net/Sikuli4NetTests/ChromeIcon.png","offset_x":0,"offset_y":0,"similar":0.8},"highlight":true}:::
-:::{"message":"Pattern Found!","result":"PASS"}:::
-:::Result: PASS Message: Pattern Found! Stacktrace: :::
-:::Making Request to Service: http://localhost:8080/sikuli/api/rightclick POST: {"jPattern":{"imagePath":"C:/Programming/SharpDevelop/Sikuli4Net/Sikuli4NetTests/ChromeIcon.png","offset_x":0,"offset_y":0,"similar":0.8},"jKeyModifier":"NONE"}:::
-:::{"message":"Pattern RightClicked","result":"PASS"}:::
-:::Result: PASS Message: Pattern RightClicked Stacktrace: :::
-:::Making Request to Service: http://localhost:8080/sikuli/api/find POST: {"jPattern":{"imagePath":"C:/Programming/SharpDevelop/Sikuli4Net/Sikuli4NetTests/ChromeJumpList.png","offset_x":0,"offset_y":0,"similar":0.4},"highlight":true}:::
-:::{"message":"Pattern Found!","result":"PASS"}:::
-:::Result: PASS Message: Pattern Found! Stacktrace: :::

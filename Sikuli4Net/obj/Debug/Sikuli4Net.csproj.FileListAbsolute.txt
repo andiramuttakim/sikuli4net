@@ -1,7 +1,0 @@
-C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4Net\bin\Debug\Sikuli4Net.dll
-C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4Net\bin\Debug\Sikuli4Net.pdb
-C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4Net\bin\Debug\Newtonsoft.Json.dll
-C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4Net\bin\Debug\Newtonsoft.Json.xml
-C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4Net\obj\Debug\Sikuli4Net.csprojResolveAssemblyReference.cache
-C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4Net\obj\Debug\Sikuli4Net.dll
-C:\Programming\SharpDevelop\Sikuli4Net\Sikuli4Net\obj\Debug\Sikuli4Net.pdb
